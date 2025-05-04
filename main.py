@@ -20,8 +20,6 @@ class RandomCarPlugin(Star):
     @filter.command("随机猫图")
     async def random_cat(self, event: AstrMessageEvent):
         """随机猫图指令"""
-        user_name = event.get_sender_name()
-
         try:
             # 创建一个 aiohttp ClientSession 实例
             async with aiohttp.ClientSession() as session:
